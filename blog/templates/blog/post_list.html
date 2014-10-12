@@ -5,7 +5,7 @@
           {% for post in posts %}
             <div class="post">
               <h2><a href="">{{ post.title }}</a></h2>
-              <p>{{ post.text|linebreaks }}</p>
+              <h4>{{ post.text|linebreaks }}</h4>
               <p>Published: {{ post.published_date }} by {{ post.author }}</p>
             </div>
           {% endfor %}
