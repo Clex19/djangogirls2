@@ -4,7 +4,7 @@
     {% for post in posts %}
         <div class="post">
             <h2><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            <p>{{ post.text|truncatechars:200 }}</p>
+            <h4>{{ post.text|truncatewords:200 }}</h4>
             <p class="date">Created: {{ post.created_date }}</p>
         </div>
     {% endfor %}
