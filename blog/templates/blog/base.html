@@ -9,15 +9,14 @@
 
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
-      <link href='https://fonts.googleapis.com/css?family=Bilbo' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Exo:500' rel='stylesheet' type='text/css'>
 
-      <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
 
     <div class="page-header">
-      <span title="Yo, why are you hovering over me? Just click me already."><h1><a href="/">Yo, I'm a Blog!</a></h1></span>
+      <span title="Yo, why are you hovering over me, eh? Just click me already."><h1><a href="/">Yo, I'm a Blog!</a></h1></span>
       <span title="Yo, click me to see the drafts!"><a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
       <span title="Yo, click me to add a new post!"><a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
       </br>

@@ -1,8 +1,7 @@
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:hover {
     color: white;
     font-size: 56pt;
-    font-family: 'Bilbo', cursive;
-    text-decoration: none;
+    font-family: 'Exo', sans-serif, bold;
     margin-left: auto;
     margin-right: auto;
     width: 7em;
@@ -12,13 +11,13 @@
     background-color: blue;
     margin-top: 0;
     margin-left: auto;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 30px 20px;
 }
 
 h2 a {
     color: black;
     font-size: 32pt;
-    font-family: 'Cardo', serif;
+    font-family: 'Exo', sans-serif;
 }
 
 h2 a:active, h2 a:hover {
@@ -30,7 +29,7 @@ h2 a:active, h2 a:hover {
 }
 
 h2 {
-    font-family: 'Cardo', serif;
+    font-family: 'Exo', sans-serif;
     font-size: 32pt;
 }
 
@@ -61,6 +60,7 @@ h4 {
     font-size: 26pt;
     margin-right: 20px;
 }
+
 
 ::-webkit-scrollbar {
     width: 14px;

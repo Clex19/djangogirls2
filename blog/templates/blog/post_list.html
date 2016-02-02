@@ -4,7 +4,7 @@
 
           {% for post in posts reversed %}
             <div class="post">
-              <h2><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+              <span title="Yo, click me to view this post!"><h2><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h2></span>
               <h4>{{ post.text|linebreaks|truncatewords:200 }}</h4>
               <p>Published: {{ post.published_date }} by {{ post.author }}</p>
             </div>
