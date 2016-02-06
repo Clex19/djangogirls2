@@ -3,20 +3,23 @@
   <head>
       <title>Yo, I'm a Blog!</title>
 
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <!-- Latest compiled and minified CSS      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
       <link href='https://fonts.googleapis.com/css?family=Exo:500' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
   </head>
 
   <body>
 
     <div class="page-header">
-      <span title="Yo, why are you hovering over me, eh? Just click me already."><h1><a href="/">Yo, I'm a Blog!</a></h1></span>
+      <span title="Yo, why you hoverin' over me? Just click me already."><h1><a href="/">Yo, I'm a Blog!</a></h1></span>
       <span title="Yo, click me to see the drafts!"><a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
       <span title="Yo, click me to add a new post!"><a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
       </br>
