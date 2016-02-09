@@ -1,11 +1,17 @@
 {% extends 'blog/base.html' %}
 
+    	
+
 {% block content %}
+	<h2>Yo, you're viewing drafts!</h2>
     {% for post in posts %}
+
+    	<br>	
         <div class="post">
             <h2><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <h4>{{ post.text|truncatewords:200 }}</h4>
             <p class="date">Created: {{ post.created_date }} by {{ post.author }}</p>
+            <a class="btn btn-default" href="{% url 'blog.views.post_publish' pk=post.pk %}">Yo, publish this post!</a>
         </div>
     {% endfor %}
 {% endblock %}
